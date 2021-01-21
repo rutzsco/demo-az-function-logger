@@ -13,11 +13,11 @@ stages:
 - template: azure-release-pipelines-stage-template.yml
   parameters:
     stageName: 'CI'
-    environment: 'API-CI'
+    environment: 'DEMO-CI'
     azureSubscription: ${{ variables.azureSubscription }}
     functionAppName: 'demo-function-logger'
     resourceGroupName: 'demo-function-logger'
-    storageAccountName: 'azfunctionsdapici'
+    storageAccountName: 'azfuncdflogci'
     region: 'Central US'
     packageName: 'Demo.Function.Logger.zip'
 
